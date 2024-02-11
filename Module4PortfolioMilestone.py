@@ -19,9 +19,12 @@ class ItemToPurchase:
 
 def main():
     item1 = ItemToPurchase()
-    item1.updateValues()
     item2 = ItemToPurchase()
-    item2.updateValues()
+    count = 1
+    for x in (item1, item2):
+        print("  --ITEM #{}--  ".format(count))
+        x.updateValues()
+        count +=1
     
     print ("TOTAL COST")
     item1.print_item_cost()
