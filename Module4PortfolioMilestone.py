@@ -5,9 +5,9 @@ class ItemToPurchase:
         self.item_quantity = 0
         
     def updateValues(self):
-        self.item_name = input("Enter the item name: ")
-        self.item_price = float(input("Enter the item price: "))
-        self.item_quantity = int(input("Enter the item quantity: "))
+        self.item_name = input("Enter the item name:\n")
+        self.item_price = float(input("Enter the item price:\n"))
+        self.item_quantity = int(input("Enter the item quantity:\n"))
         
     def print_item_cost(self):
         print(self.item_name, end=" ")
